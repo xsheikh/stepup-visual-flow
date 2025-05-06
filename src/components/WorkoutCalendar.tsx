@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Dumbbell, Running, Calendar } from 'lucide-react';
+import { Dumbbell, Calendar } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const WorkoutCalendar: React.FC = () => {
@@ -16,7 +16,7 @@ const WorkoutCalendar: React.FC = () => {
       day: 'Tuesday', 
       type: 'Cardio', 
       exercises: ['30 min Run', '10 min Cooldown', 'Stretching'],
-      icon: Running,
+      icon: Dumbbell, // Changed from Running to Dumbbell
       color: 'bg-stepup-soft-blue'
     },
     { 
@@ -37,7 +37,7 @@ const WorkoutCalendar: React.FC = () => {
       day: 'Friday', 
       type: 'Cardio', 
       exercises: ['HIIT 20 min', 'Cooldown', 'Foam Rolling'],
-      icon: Running,
+      icon: Dumbbell, // Changed from Running to Dumbbell
       color: 'bg-stepup-soft-blue'
     },
     { 
