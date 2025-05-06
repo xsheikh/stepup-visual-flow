@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        // Custom colors for our app
+        stepup: {
+          purple: '#9b87f5',
+          'light-purple': '#E5DEFF',
+          blue: '#0EA5E9',
+          'soft-blue': '#D3E4FD',
+          'soft-green': '#F2FCE2',
+          'soft-pink': '#FFDEE2',
+          'soft-yellow': '#FEF7CD',
+          'soft-orange': '#FEC6A1',
+        }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +96,30 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+        'pulse-light': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.7' }
+        },
+        'slide-in': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' }
+        },
+        'progress-fill': {
+          '0%': { width: '0%' },
+          '100%': { width: 'var(--progress-value, 0%)' }
+        }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+        'pulse-light': 'pulse-light 2s ease-in-out infinite',
+        'slide-in': 'slide-in 0.4s ease-out forwards',
+        'progress-fill': 'progress-fill 1s ease-out forwards'
+			},
+      fontFamily: {
+        sans: ['Inter', 'sans-serif']
+      }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
