@@ -71,3 +71,19 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+# Step-up Tracker App
+
+This is a fitness lifestyle web app designed with Lovable AI. It helps users:
+
+- Track their daily steps  
+- Plan meals for the week  
+- Follow a weekly workout calendar  
+- Stay motivated with a clean, colorful UI  
+
+The app is optimized for mobile and web, and features tabs for:
+- Step Tracker
+- Meal Planner
+- Workout Calendar
+
+It was built as part of a class project to demonstrate AI-generated UI and SDLC deliverables.
